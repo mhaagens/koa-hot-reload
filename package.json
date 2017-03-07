@@ -1,0 +1,33 @@
+{
+    "name": "koa-hot-reload",
+    "version": "1.0.0",
+    "description": "koa hot-reloading server",
+    "main": "index.js",
+    "scripts": {
+        "start:server": "webpack --config  webpack.config.server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/budarin/koa-hot-reload.git"
+    },
+    "keywords": [
+        "koa",
+        "hot-reload"
+    ],
+    "author": "Vadim Budarin",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/budarin/koa-hot-reload/issues"
+    },
+    "homepage": "https://github.com/budarin/koa-hot-reload#readme",
+    "dependencies": {
+        "babel-core": "^6.23.1",
+        "babel-loader": "^6.4.0",
+        "babel-preset-env": "^1.2.1",
+        "koa": "next",
+        "start-server-webpack-plugin": "^2.1.2",
+        "webpack": "^2.2.1",
+        "webpack-node-externals": "^1.5.4"
+    }
+}
