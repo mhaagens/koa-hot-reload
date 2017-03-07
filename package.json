@@ -4,8 +4,7 @@
     "description": "koa hot-reloading server",
     "main": "index.js",
     "scripts": {
-        "start:server": "webpack --config  webpack.config.server.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start:server": "webpack --config  webpack.config.server.js"
     },
     "repository": {
         "type": "git",
