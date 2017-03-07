@@ -4,7 +4,7 @@
     "description": "koa hot-reloading server",
     "main": "index.js",
     "scripts": {
-        "start:server": "webpack --config  webpack.config.server.js"
+        "start:server": "webpack --config  ./webpack.config.server.js"
     },
     "repository": {
         "type": "git",
@@ -24,7 +24,7 @@
         "babel-core": "^6.23.1",
         "babel-loader": "^6.4.0",
         "babel-preset-env": "^1.2.1",
-        "koa": "next",
+        "koa": "^2.0.1",
         "start-server-webpack-plugin": "^2.1.2",
         "webpack": "^2.2.1",
         "webpack-node-externals": "^1.5.4"

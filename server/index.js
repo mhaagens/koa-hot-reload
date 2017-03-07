@@ -3,17 +3,18 @@ import app from './server';
 
 const port = 3000;
 
-const server = http.createServer(app.callback());
+const appCallback = app.callback();
+const server = http.createServer(appCallback);
 
-let currentApp = app;
+let currentApp = appCallback;
 
 server.listen(port);
 
 if (module.hot) {
     module.hot.accept('./server', () => {
-        server.removeListener('request', currentApp.callback());
-        server.on('request', app.callback());
-        currentApp = app;
+        server.removeListener('request', currentApp);
+        server.on('request', appCallback);
+        currentApp = appCallback;
     });
 }
 
