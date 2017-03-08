@@ -3,7 +3,7 @@ import Koa from 'koa';
 const app = new Koa();
 
 app.use(ctx => {
-    const greeting = 'Hello World';
+    const greeting = 'Hello World!';
 
     ctx.body = `<!doctype html>
     <html class="no-js" lang="">
